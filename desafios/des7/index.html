@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+    <head>
+
+        <meta charset = "UTF-8">
+
+        <meta name = "viewport" contente = "whidth = device - whidth - scale = 1.0">
+
+        <title>Adaptando imagens</title>
+
+    </head>
+
+    <body>
+        <h1>Imagens flexível</h1>
+
+        <p>Você está vendo a imagem toda na sua tela? Experimente ampliar a a tela para ter uma melhor experiância.</p>
+
+        <picture>
+
+            <source media="(min-width: 1250px )" srcset="imagens/ceu-gg.jpg" type="image/jpg">
+
+            <source media="(min-width: 650px)" srcset="imagens/ceu-g.jpg" type="image/jpg">
+
+            <source media="(min-width: 500px )" srcset="imagens/ceu-m.jpg" type = "image/jpg">
+
+            <source media = "(min-width: 250px )" srcset = "imagns/ceu-p.jpg" type = "image/jpg">
+        
+            <img src = "imagens/ceu-pp.jpg" alt = "Paisagem">
+        </picture>
+
+
+
+
+    </body>

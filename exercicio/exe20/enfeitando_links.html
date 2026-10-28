@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+
+    <meta charset = "UTF-8">
+    <meta name =" viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decorando links</title>
+
+    <style>
+
+        
+
+        /*Seletores personalizados
+
+          id = "#"
+          class = "."
+          pseudo-class = ":"
+          pseudo-elemento = "::"
+          clildren(filho) = ">"
+          */
+
+          
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        a {
+            color: chartreuse;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: darkblue;
+        }
+
+        a:active {
+            color: aqua;
+        }
+
+        a:hover {
+            background-color: bisque;
+            text-decoration: underline;
+        }
+
+        .principal::before {
+            content: "-->";
+        
+        }
+
+        .principal::after {
+           
+            content: "<--"
+        
+        }
+
+        h1#prin {
+            color: dimgrey;
+
+        }
+
+
+        div {
+            background-color: blue;
+            width: 150px;
+    
+        }
+
+        div > p {
+            display: none;
+
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+    <h1 id = "prin">Personalizando links</h1>
+
+    <ul>
+        <li><a href = "https://github.com" target = "_blank" rel = "external" 
+        class="principal">Github</a></li>
+
+        <li><a href = "https://www.instagram.com/" target = "_blank" rel = "external" class="principal">Instagram</a></li>
+
+    </ul>
+
+    <div>
+        Passe o mouse aqui
+        
+        <p><a href="https://github.com" target="_blank" rel = "external">clique aqui</a></p>
+    </div>
+    
+</body>
+</html>

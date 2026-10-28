@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta name = "referre" content= "strict-origin-when-cross-origin">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos em HMTL</title>
+
+</head>
+
+<body>
+
+    <h1>Vídeos hospedados localmenta</h1>
+    <p>Esse vídeo está hospedado no meu próprio servidor</p>
+
+    <video width = "600" poster = "imagens/foto_video.jpg" loop autoplay controls>
+
+        <source src = "media/video.mp4" type = "video/mp4">
+
+        <source src="media/Video(1).webm" type="video/webm">
+
+        <p>Seu navegador não suporta videos <a href  ="media/video.mp4" download="video.mp4" type = "video/mp4">Clique aqui para baixar</a>
+
+        </p>
+
+    </video><!--<video src = "media/Video(1).webm" width = "500" height = "300" controls poster = "imagens/foto-video.jpg">-->
+
+
+    <h1>Incorporar vídeo</h1>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/Y4goaZhNt4k?si=OnTffNpnE6jRp4jV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+    
+</body>
+
+</html>

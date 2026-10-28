@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+
+</head>
+
+<body>
+    <h1>Imagens flexívas</h1>
+    <p>Tente abrir esse site em dispositos diferentes ou simplismente aumente ou dimínua a tela do seu navegador.</p>
+
+    
+    <picture>
+        
+        <source media = "(max-width: 750px)" srcset = "imagens/foto-p.png" type = "image/png">
+
+        <source media = "(max-width: 1050px)" srcset = "imagens/foto-m.png" type = "image/png">
+
+        <img src="imagens/foto-g.png" alt="imagem - g">
+
+
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos reproduzir áudio</p>
+
+
+
+    <audio preload = "metadata" controls autoplay loop >
+
+        <source src="media/audio.mp3" type="audio/mpeg">   <!--mpeg, wav, ogg-->
+        <source src="media/auadio.wav" type="audio/wav">
+        <source src="media/audio.ogg" type="audio/ogg">
+        <p>O seu navegador não suporta áudio <a href = "media/audio.mp3" download="audio.mp3" type = "audio/mpeg">Clique aqui para baixa</a></p>
+
+    </audio>
+
+    <audio src="audio.mp3"controls autoplay muted></audio>
+    
+    
+</body>
+</html>

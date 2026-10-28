@@ -1,0 +1,27 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bitcount+Ink:wght@100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+h1 {
+    font-family: "bitcount ink", arial, sans-serif;
+    font-weight: bolder;
+    font-size: 3em;
+
+
+
+}
+
+
+
+h2 {
+    font: italic normal 2em "indie flower";
+
+}
+
+
+
+
+
